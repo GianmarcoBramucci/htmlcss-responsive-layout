@@ -1,0 +1,40 @@
+/*
+********************************** 
+RESET 
+**********************************
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+********************************** 
+GENERAL 
+**********************************
+*/
+.conteiner{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0 1rem ;
+}
+/* debug */
+.border{
+    border: 5px  dashed black;
+}
+/*
+********************************** 
+SECTION 
+**********************************
+*/
+/* header */
+header{
+    height: 80px;
+    line-height: 80px;
+    background-color: blueviolet;
+}
+header > .conteiner{
+    display: flex;
+    justify-content: space-between;
+}
