@@ -13,6 +13,9 @@ RESET
 GENERAL 
 **********************************
 */
+/* main,header,footer{
+    margin-top: 1rem;
+} */
 .conteiner{
     margin-left: auto;
     margin-right: auto;
@@ -46,10 +49,20 @@ header{
     height: 80px;
     line-height: 80px;
     background-color: blueviolet;
+    /* position: fixed;
+    top: 0; 
+    width: 100%; */
+    
 }
 header > .conteiner{
     display: flex;
     justify-content: space-between;
+}
+.logo{
+    margin-top: 1rem;
+}
+.icon-menu{
+    color: whitesmoke;
 }
 /* main */
 /* section-1*/
@@ -61,6 +74,7 @@ RESPONSIVE
 */
 /* tablet */
 @media screen and (min-width: 780px) {
+    /* section-1*/
     #s1-5card .row{
         display:flex ;
         flex-wrap: wrap;
@@ -70,5 +84,13 @@ RESPONSIVE
     }
     #s1-5card .col:first-child{
         width: calc(100%/3*2);
+    }
+    /* section-4*/
+    #s4-6card .row{
+        display:flex ;
+        flex-wrap: wrap;
+    }
+    #s4-6card .col{
+        width: calc(100%/2);
     }
 }
