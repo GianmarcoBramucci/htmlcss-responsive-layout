@@ -19,9 +19,22 @@ GENERAL
     max-width: 100%;
     padding: 0 1rem ;
 }
+.col{
+    padding: 1rem;
+}
+.row{
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.card{
+    width: 100%;
+    background-color: yellow;
+    min-height: 80px;
+}
 /* debug */
 .border{
-    border: 5px  dashed black;
+    border: 2px  dashed black;
+    min-height: 100px;
 }
 /*
 ********************************** 
@@ -37,4 +50,25 @@ header{
 header > .conteiner{
     display: flex;
     justify-content: space-between;
+}
+/* main */
+/* section-1*/
+
+/*
+********************************** 
+RESPONSIVE 
+**********************************
+*/
+/* tablet */
+@media screen and (min-width: 780px) {
+    #s1-5card .row{
+        display:flex ;
+        flex-wrap: wrap;
+    }
+    #s1-5card .col{
+        width: calc(100%/3);
+    }
+    #s1-5card .col:first-child{
+        width: calc(100%/3*2);
+    }
 }
